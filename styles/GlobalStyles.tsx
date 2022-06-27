@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const Globals = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   html,
   body {
     color: ${({ theme }) => theme.colors.primary};
@@ -18,4 +18,4 @@ const Globals = createGlobalStyle`
   }
 `;
 
-export default Globals;
+export default GlobalStyles;
