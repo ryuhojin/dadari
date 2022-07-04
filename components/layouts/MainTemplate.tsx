@@ -1,24 +1,33 @@
 import styled from "styled-components";
+import bgImg from "assets/image/background.png";
 
 const StyledMainTemplate = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+  background: #111320;
 `;
+
 const StyledHeaderTemplate = styled.div`
   width: 100%;
   height: 60px;
-  background: #fff;
 `;
+
 const StyledContentTemplate = styled.div`
-  background: #fff;
   flex-grow: 1;
   width: 100%;
 `;
+
 const StyledFooterTemplate = styled.div`
   width: 100%;
-  height: 100px;
-  background: #f5f4f8;
+  height: 90px;
+  background: #000;
+`;
+
+const StyledBackgroundTemplate = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 `;
 
 const MainTemplate = ({
@@ -28,9 +37,11 @@ const MainTemplate = ({
 }) => {
   return (
     <StyledMainTemplate>
-      <StyledHeaderTemplate>1</StyledHeaderTemplate>
-      <StyledContentTemplate>113{children}</StyledContentTemplate>
-      <StyledFooterTemplate>2</StyledFooterTemplate>
+      <StyledBackgroundTemplate>
+        <StyledHeaderTemplate></StyledHeaderTemplate>
+        <StyledContentTemplate>{children}</StyledContentTemplate>
+      </StyledBackgroundTemplate>
+      <StyledFooterTemplate></StyledFooterTemplate>
     </StyledMainTemplate>
   );
 };
