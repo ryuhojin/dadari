@@ -11,6 +11,7 @@ const StyledMainTempalte = styled.div`
 `;
 const StyledMain = styled.main`
   flex-grow: 1;
+  overflow-x: hidden;
   overflow-y: auto;
   background: #111320 url(assets/image/bg_main.png) no-repeat center top /
     contain;
