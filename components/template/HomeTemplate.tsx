@@ -49,7 +49,7 @@ const StyledCoreSection = styled.div`
 
 const StyledListSection = styled.div`
   margin-top: 29px;
-  margin-bottom:29px;
+  margin-bottom: 29px;
   p {
     margin: 0 26px;
     font-size: 16px;
@@ -64,7 +64,9 @@ const StyledListSection = styled.div`
     display: inline-block;
     overflow-x: auto;
     white-space: nowrap;
-
+    ::-webkit-scrollbar {
+      display: none;
+    }
     width: 100vw;
     div + div {
       margin-left: 10px;
