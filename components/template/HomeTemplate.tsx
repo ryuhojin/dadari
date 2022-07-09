@@ -1,6 +1,7 @@
 import { Footer, HeaderMain } from "components/base";
 import Meta from "components/common/Meta";
 import SectionBtn from "components/main/SectionBtn";
+import SectionItem from "components/main/SectionItem";
 import styled from "styled-components";
 const StyledMainTempalte = styled.div`
   background: #111320;
@@ -10,6 +11,7 @@ const StyledMainTempalte = styled.div`
 `;
 const StyledMain = styled.main`
   flex-grow: 1;
+  overflow-y: auto;
   background: #111320 url(assets/image/bg_main.png) no-repeat center top /
     contain;
 `;
@@ -45,6 +47,31 @@ const StyledCoreSection = styled.div`
   }
 `;
 
+const StyledListSection = styled.div`
+  margin-top: 29px;
+  margin-bottom:29px;
+  p {
+    margin: 0 26px;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    color: #fff;
+    line-height: 1.25;
+  }
+  div {
+    padding: 0 20px;
+    display: inline-block;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    width: 100vw;
+    div + div {
+      margin-left: 10px;
+    }
+  }
+`;
+
 const HomeTemplate = ({ children }: any) => {
   return (
     <>
@@ -63,6 +90,18 @@ const HomeTemplate = ({ children }: any) => {
             <p>지금 바로 비교해보세요</p>
             <SectionBtn />
           </StyledCoreSection>
+          <StyledListSection>
+            <p>이런 구독도 있어요</p>
+            <div>
+              <SectionItem />
+              <SectionItem />
+              <SectionItem />
+              <SectionItem />
+              <SectionItem />
+              <SectionItem />
+              <SectionItem />
+            </div>
+          </StyledListSection>
         </StyledMain>
         <Footer />
       </StyledMainTempalte>

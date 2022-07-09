@@ -9,11 +9,11 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    height:100%;
-    width:100%;
+    height:100vh;
+    width:100vw;
   }
   #__next {
-    width:100%;
+    width:100vw;
     max-width: 768px;
     margin:0 auto;
   }
