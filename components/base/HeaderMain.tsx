@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledMainHeader = styled.header`
-  background-color: #141414;
+  background-color: #111320;
   height: 60px;
   padding: 14px 20px;
   display: flex;

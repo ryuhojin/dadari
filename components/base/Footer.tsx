@@ -11,11 +11,19 @@ const StyledFooter = styled.footer`
 
 const StyledTeamName = styled.span`
   font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
   color: #ecf1fb;
 `;
 
 const StyledCopyright = styled.span`
   color: #9194a9;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
   font-size: 12px;
 `;
 
