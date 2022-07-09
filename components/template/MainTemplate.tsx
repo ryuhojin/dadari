@@ -7,8 +7,8 @@ const StyledMainTempalte = styled.div`
   height: 100%;
 `;
 const StyledMain = styled.main`
-  flex-grow: 1; 
-  background: #141414 url(assets/bg_main.png) no-repeat center top / contain ;
+  flex-grow: 1;
+  background: #141414 url(assets/bg_main.png) no-repeat center top / contain;
 `;
 const MainTemplate = ({ children }: any) => {
   return (
@@ -16,7 +16,7 @@ const MainTemplate = ({ children }: any) => {
       <Meta title={"다달이"} />
       <StyledMainTempalte>
         <HeaderMain />
-        <StyledMain bg={<></>}></StyledMain>
+        <StyledMain></StyledMain>
         <Footer />
       </StyledMainTempalte>
     </>
