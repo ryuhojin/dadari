@@ -68,6 +68,7 @@ const StyledListSection = styled.div`
     ::-webkit-scrollbar {
       display: none;
     }
+    max-width: 768px;
     width: 100vw;
     div + div {
       margin-left: 10px;
