@@ -18,7 +18,7 @@ const HeaderMain = () => {
         viewBox="0 0 30 30"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g fill="#FFF" fill-rule="evenodd">
+        <g fill="#FFF" fillRule="evenodd">
           <path d="M6.125 26.217 0 26.261 4.746 5.109l6.126-.044zM26 14.276l-8.002.052-5.11-9.276L20.89 5zM16.217 26.158l-8.002.052 9.173-9.906 8.002-.052z" />
         </g>
       </svg>
@@ -32,7 +32,7 @@ const HeaderMain = () => {
         <defs>
           <path id="1zyhncf5ia" d="M0 0h24v24H0z" />
         </defs>
-        <g transform="translate(4 4)" fill="none" fill-rule="evenodd">
+        <g transform="translate(4 4)" fill="none" fillRule="evenodd">
           <mask id="kki0ut7prb" fill="#fff">
             <use xlinkHref="#1zyhncf5ia" />
           </mask>
