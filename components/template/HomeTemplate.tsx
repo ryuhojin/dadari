@@ -1,5 +1,6 @@
 import { Footer, HeaderMain } from "components/base";
 import Meta from "components/common/Meta";
+import SectionBtn from "components/main/SectionBtn";
 import styled from "styled-components";
 const StyledMainTempalte = styled.div`
   background: #111320;
@@ -9,7 +10,8 @@ const StyledMainTempalte = styled.div`
 `;
 const StyledMain = styled.main`
   flex-grow: 1;
-  background: #111320 url(assets/image/bg_main.png) no-repeat center top / contain;
+  background: #111320 url(assets/image/bg_main.png) no-repeat center top /
+    contain;
 `;
 const StyledMainCopy = styled.p`
   margin-left: 26px;
@@ -26,7 +28,24 @@ const StyledMainCopy = styled.p`
     line-height: 1.33;
   }
 `;
-const MainTemplate = ({ children }: any) => {
+
+const StyledCoreSection = styled.div`
+  margin-top: 132px;
+  p {
+    margin: 0 26px;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    color: #fff;
+    line-height: 1.25;
+  }
+  div {
+    margin-top: 13px;
+  }
+`;
+
+const HomeTemplate = ({ children }: any) => {
   return (
     <>
       <Meta title={"다달이"} />
@@ -40,6 +59,10 @@ const MainTemplate = ({ children }: any) => {
             <br />
             <span>뭐가 다르지?</span>
           </StyledMainCopy>
+          <StyledCoreSection>
+            <p>지금 바로 비교해보세요</p>
+            <SectionBtn />
+          </StyledCoreSection>
         </StyledMain>
         <Footer />
       </StyledMainTempalte>
@@ -47,4 +70,4 @@ const MainTemplate = ({ children }: any) => {
   );
 };
 
-export default MainTemplate;
+export default HomeTemplate;

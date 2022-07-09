@@ -1,10 +1,10 @@
-import MainTemplate from "components/template/MainTemplate";
+import HomeTemplate from "components/template/HomeTemplate";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
-  return <MainTemplate>
+  return <HomeTemplate>
     
-  </MainTemplate>;
+  </HomeTemplate>;
 };
 
 export default Home;
