@@ -4,7 +4,7 @@ const GlobalStyles = createGlobalStyle`
   html,
   body,
   #__next {
-    color: ${({ theme }) => theme.colors.primary};
+    background:#141414;
     padding: 0;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,

@@ -1,4 +1,4 @@
-import MainTemplate from "components/layouts/MainTemplate";
+import MainTemplate from "components/template/MainTemplate";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
