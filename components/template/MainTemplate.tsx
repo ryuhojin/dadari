@@ -2,13 +2,14 @@ import { Footer, HeaderMain } from "components/base";
 import Meta from "components/common/Meta";
 import styled from "styled-components";
 const StyledMainTempalte = styled.div`
+  background: #141414;
   display: flex;
   flex-direction: column;
   height: 100%;
 `;
 const StyledMain = styled.main`
   flex-grow: 1;
-  background: #141414 url(assets/bg_main.png) no-repeat center top / contain;
+  background: #141414 url(assets/bg_main.png) no-repeat center top / 100% 443px;
 `;
 const MainTemplate = ({ children }: any) => {
   return (
