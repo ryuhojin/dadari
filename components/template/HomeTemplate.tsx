@@ -43,9 +43,6 @@ const StyledCoreSection = styled.div`
     color: #fff;
     line-height: 1.25;
   }
-  div {
-    margin-top: 13px;
-  }
 `;
 
 const StyledListSection = styled.div`
