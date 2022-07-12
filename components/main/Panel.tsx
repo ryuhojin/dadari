@@ -64,6 +64,17 @@ const StyledIconFront = styled.div`
   top: 0;
 `;
 
+const StyledTitle = styled.span`
+  font-size: 17px;
+  line-height: 1.35;
+  letter-spacing: 0.5px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 16px;
+`;
+
 const StyledBtn = styled.div`
   position: relative;
 `;
@@ -97,6 +108,7 @@ const Panel = () => {
               <IconMovie iWidth={20} iHeight={20} />
             </StyledIconFront>
           </StyledIcon>
+          <StyledTitle>OTT</StyledTitle>
         </StyledPanelLeft>
         <StyledPanelRight>
           <PanelIconList />
