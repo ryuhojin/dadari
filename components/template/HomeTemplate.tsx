@@ -2,10 +2,10 @@ import { Footer, HeaderMain } from "components/base";
 import Meta from "components/common/Meta";
 import styled from "styled-components";
 import {
-  SectionCatchPhrase,
-  SectionSubTitle,
-  SectionTopic,
-  SectionList,
+  Catchphrase,
+  SubTitle,
+  BoxList,
+  Panel,
 } from "components/main";
 const StyledMainTempalte = styled.div`
   background: #111320;
@@ -28,11 +28,11 @@ const HomeTemplate = ({ children }: any) => {
       <StyledMainTempalte>
         <HeaderMain />
         <StyledMain>
-          <SectionCatchPhrase />
-          <SectionSubTitle sub={"지금 바로 비교해보세요"} />
-          <SectionTopic />
-          <SectionSubTitle sub={"이런 구독도 있어요"} />
-          <SectionList />
+          <Catchphrase />
+          <SubTitle sub={"지금 바로 비교해보세요"} />
+          <Panel />
+          <SubTitle sub={"이런 구독도 있어요"} />
+          <BoxList />
         </StyledMain>
         <Footer />
       </StyledMainTempalte>

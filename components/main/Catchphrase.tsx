@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-const StyledSectionCatchPhrase = styled.div`
+const StyledCatchphrase = styled.div`
   padding: 31px 26px;
   height: 273px;
 `;
-const StyledCatchPhrase = styled.p`
+
+const StyledCatchphraseText = styled.p`
   margin: 0;
   font-size: 30px;
   line-height: 1.33;
@@ -18,17 +19,18 @@ const StyledCatchPhrase = styled.p`
     line-height: 1.33;
   }
 `;
-const SectionCatchPhrase = () => {
+
+const Catchphrase = () => {
   return (
-    <StyledSectionCatchPhrase>
-      <StyledCatchPhrase>
+    <StyledCatchphrase>
+      <StyledCatchphraseText>
         넷플릭스와
         <br />
         왓챠,
         <br />
         <span>뭐가 다르지?</span>
-      </StyledCatchPhrase>
-    </StyledSectionCatchPhrase>
+      </StyledCatchphraseText>
+    </StyledCatchphrase>
   );
 };
-export default SectionCatchPhrase;
+export default Catchphrase;

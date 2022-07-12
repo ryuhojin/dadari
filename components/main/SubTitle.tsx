@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledSectionSubTitle = styled.p`
+const StyledSubTitle = styled.p`
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -10,7 +10,7 @@ const StyledSectionSubTitle = styled.p`
   color: #fff;
   margin: 17px 0 17px 26px;
 `;
-const SectionSubTitle = ({ sub }: { sub: String }) => {
-  return <StyledSectionSubTitle>{sub}</StyledSectionSubTitle>;
+const SubTitle = ({ sub }: { sub: String }) => {
+  return <StyledSubTitle>{sub}</StyledSubTitle>;
 };
-export default SectionSubTitle;
+export default SubTitle;
