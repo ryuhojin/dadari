@@ -15,7 +15,7 @@ const IconArrowL = ({
       <path
         d="m17 9-7 7 7 7"
         stroke="#FFF"
-        stroke-width="2"
+        strokeWidth="2"
         fill="none"
         fillRule="evenodd"
         strokeLinecap="square"
