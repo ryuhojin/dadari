@@ -1,8 +1,18 @@
 import styled from "styled-components";
+import SubCategoryItem from "./SubCategoryItem";
+
+const StyledSubCategoryHeight = styled.div`
+  height: 58px; ;
+  display: flex;
+  align-items: center;
+  background: #000;
+`;
 
 const StyledSubCategoryList = styled.div`
   overflow-x: scroll;
-  padding: 0 20px;
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
   ::-webkit-scrollbar {
     display: none;
   }
@@ -10,14 +20,24 @@ const StyledSubCategoryList = styled.div`
 const StyledScrollSubCategoryList = styled.div`
   display: inline-flex;
   div + div {
-    margin-left: 8px;
+    margin-left: 7px;
   }
 `;
 const SubCategoryList = () => {
   return (
-    <StyledSubCategoryList>
-      <StyledScrollSubCategoryList></StyledScrollSubCategoryList>
-    </StyledSubCategoryList>
+    <StyledSubCategoryHeight>
+      <StyledSubCategoryList>
+        <StyledScrollSubCategoryList>
+          <SubCategoryItem />
+          <SubCategoryItem />
+          <SubCategoryItem />
+          <SubCategoryItem />
+          <SubCategoryItem />
+          <SubCategoryItem />
+          <SubCategoryItem />
+        </StyledScrollSubCategoryList>
+      </StyledSubCategoryList>
+    </StyledSubCategoryHeight>
   );
 };
 export default SubCategoryList;

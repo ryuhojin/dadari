@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { Catchphrase, SubTitle, BoxList, Panel } from "components/main";
 
 const Section = () => {

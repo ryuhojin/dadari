@@ -11,6 +11,8 @@ const StyledSeacrhTempalte = styled.div`
 
 const StyledSection = styled.main`
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
   overflow-y: auto;
 `;

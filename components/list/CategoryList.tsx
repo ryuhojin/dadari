@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import CategoryItem from "./CategoryItem";
 
+const StyledCategoryHeight = styled.div`
+  height: 152px;
+  display: flex;
+  align-items: center;
+`;
+
 const StyledCategoryList = styled.div`
   overflow-x: scroll;
   padding: 12px 20px 28px 20px;
@@ -16,16 +22,20 @@ const StyledScrollCategoryList = styled.div`
 `;
 const CategoryList = () => {
   return (
-    <StyledCategoryList>
-      <StyledScrollCategoryList>
-        <CategoryItem />
-        <CategoryItem />
-        <CategoryItem />
-        <CategoryItem />
-        <CategoryItem />
-        <CategoryItem />
-      </StyledScrollCategoryList>
-    </StyledCategoryList>
+    <StyledCategoryHeight>
+      <StyledCategoryList>
+        <StyledScrollCategoryList>
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+          <CategoryItem />
+        </StyledScrollCategoryList>
+      </StyledCategoryList>
+    </StyledCategoryHeight>
   );
 };
 
