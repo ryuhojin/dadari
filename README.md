@@ -13,3 +13,4 @@ maybe... polished and axios...next-auth?
 test URL:<br/>
 dadari.vercel.app
 dadari.vercel.app/list
+dadari.vercel.app/item/1
