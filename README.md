@@ -2,16 +2,14 @@
 
 nextJS + typeScript + styledComponents
 maybe... polished and axios...next-auth?
-쓸 듯?...
-아니면 안쓸수도 swc빌드속도는 매번 경이롭다..
-복셀에 계신.. K-개발자님 감사합니다..
 
-## Getting Started
+<br/>
+컴포넌트 구조에 대해서도 생각해보자..
+컴포넌트는 UI 컴포넌트 인채로 두고 실제 로직등은
+컨테이너에서 처리하도록하자. 단방향적인 데이터 흐름을 유지하기 위해
+동등한 컴포넌트간에 데이터를 전달할일을 줄여보고 컨테이너간에는 드릴링을 통하여 데이터를 단방향으로 흐르게 해야겟다..
+<br/>
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
+test URL:<br/>
+dadari.vercel.app
+dadari.vercel.app/list

@@ -2,10 +2,9 @@ import styled from "styled-components";
 import SectionItem from "./SectionItem";
 
 const StyledCategorySection = styled.div`
-  overflow-y: scroll;
-  overflow-x: hidden;
   background: #111320;
-  padding: 24px 20px 24px 20px;
+  flex-grow: 1;
+  padding: 24px 20px 54px 20px;
   ::-webkit-scrollbar {
     display: none;
   }
@@ -20,11 +19,8 @@ const SectionGrid = () => {
   return (
     <StyledCategorySection>
       <StyledCategoryGridSection>
-        <SectionItem></SectionItem>
-        <SectionItem></SectionItem>
-        <SectionItem></SectionItem>
-        <SectionItem></SectionItem>
-        <SectionItem></SectionItem>
+        <SectionItem /> <SectionItem /> <SectionItem /> <SectionItem />{" "}
+        <SectionItem /> <SectionItem /> <SectionItem />
       </StyledCategoryGridSection>
     </StyledCategorySection>
   );

@@ -1,3 +1,4 @@
+import { Footer } from "components/base";
 import { CategoryList, SubCategoryList } from "components/list";
 import SectionContainer from "./SectionContainer";
 
@@ -7,6 +8,7 @@ const CategoryContainer = () => {
       <CategoryList />
       <SubCategoryList />
       <SectionContainer />
+      <Footer />
     </>
   );
 };

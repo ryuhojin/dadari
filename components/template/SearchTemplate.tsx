@@ -22,7 +22,6 @@ const SearchTemplate = ({ children }: any) => {
     <StyledSeacrhTempalte>
       <HeaderSearch />
       <StyledSection>{children}</StyledSection>
-      <Footer />
     </StyledSeacrhTempalte>
   );
 };
