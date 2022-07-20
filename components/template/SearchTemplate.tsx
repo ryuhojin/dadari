@@ -1,4 +1,3 @@
-import { Footer } from "components/base";
 import HeaderSearch from "components/base/HeaderSearch";
 import styled from "styled-components";
 

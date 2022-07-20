@@ -1,6 +1,10 @@
-import Description from "components/item/Description";
-import Divider from "components/item/Divider";
-import Membership from "components/item/Membership";
+import {
+  Description,
+  Divider,
+  ItemFee,
+  ItemTitle,
+  Membership,
+} from "components/item";
 
 const ItemContainer = () => {
   return (
@@ -8,6 +12,12 @@ const ItemContainer = () => {
       <Description />
       <Divider />
       <Membership />
+      <ItemTitle title={"월 구독료"} />
+      <ItemFee />
+      <ItemTitle title={"월 구독료"} />
+      <ItemFee />
+      <ItemTitle title={"월 구독료"} />
+      <ItemFee />
     </>
   );
 };

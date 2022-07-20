@@ -20,7 +20,9 @@ const BaseTemplate = ({ children }: any) => {
   return (
     <StyledSeacrhTempalte>
       <HeaderBase />
-      <StyledSection>{children}</StyledSection>
+      <StyledSection>
+        <div>{children}</div>
+      </StyledSection>
     </StyledSeacrhTempalte>
   );
 };

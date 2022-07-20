@@ -16,7 +16,15 @@ const StyledMembershipChart = styled.div`
   input[type="radio"] {
     display: none;
   }
-
+  input[type="radio"]:nth-child(1):checked ~ .toggle_option_slider {
+    left: 0;
+  }
+  input[type="radio"]:nth-child(2):checked ~ .toggle_option_slider {
+    left: 33.3%;
+  }
+  input[type="radio"]:nth-child(3):checked ~ .toggle_option_slider {
+    left: 66.7%;
+  }
   label {
     width: 33.3%;
     font-size: 15px;
@@ -34,7 +42,6 @@ const StyledMembershipChart = styled.div`
     cursor: pointer;
   }
   .toggle_option_slider {
-    left: 33.3%;
     width: 33.3%;
     height: 38px;
     border-radius: 22px;
@@ -59,6 +66,7 @@ const MembershipChart = () => {
         className="toggle_option"
         id="second_toggle"
         name="toggle_option"
+        checked
       />
       <input
         type="radio"

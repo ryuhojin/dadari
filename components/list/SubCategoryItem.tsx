@@ -12,6 +12,7 @@ const StyledSubCategoryItem = styled.div`
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
+    font-size:14px;
     line-height: 1.36;
     letter-spacing: -0.5px;
     text-align: center;
