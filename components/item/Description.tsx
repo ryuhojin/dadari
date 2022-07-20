@@ -9,6 +9,14 @@ const StyledDescription = styled.div`
 `;
 const StyledDescriptionLogo = styled.div`
   height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    width: 100px;
+    height: 100px;
+    background: url(../assets/image/ico-netflix.png) no-repeat center top / cover;
+  }
 `;
 const StyledDescriptionTitle = styled.p`
   height: 28px;
@@ -49,12 +57,14 @@ const StyledDescriptionDesc = styled.p`
 const Description = () => {
   return (
     <StyledDescription>
-      <StyledDescriptionLogo></StyledDescriptionLogo>
+      <StyledDescriptionLogo>
+        <div></div>
+      </StyledDescriptionLogo>
       <StyledDescriptionTitle>넷플릭스</StyledDescriptionTitle>
       <StyledDescriptionSubTitle>Netflix</StyledDescriptionSubTitle>
       <StyledDescriptionDesc>
         넷플릭스는 TV 프로그램과 영화를 인터넷 연결 지원 디바이스에서 광고 없이
-        시청할 수 있는 멤버십 기반 스트리밍 서비스입니다. 
+        시청할 수 있는 멤버십 기반 스트리밍 서비스입니다.
       </StyledDescriptionDesc>
     </StyledDescription>
   );
