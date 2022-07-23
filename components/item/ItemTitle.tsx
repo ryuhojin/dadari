@@ -3,11 +3,12 @@ import styled from "styled-components";
 const StyledItemTitle = styled.div`
   background-color: #21283f;
   display: flex;
-  height: 38px;;
+  height: 38px;
   justify-content: center;
   align-items: center;
 
   span {
+    flex-grow: 1;
     font-size: 15px;
     font-weight: 500;
     font-stretch: normal;
@@ -19,10 +20,12 @@ const StyledItemTitle = styled.div`
   }
 `;
 
-const ItemTitle = ({ title }: { title: String }) => {
+const ItemTitle = ({ title }: { title: String[] }) => {
   return (
     <StyledItemTitle>
-      <span>{title}</span>
+      {title.map((v) => (
+        <span>{v}</span>
+      ))}
     </StyledItemTitle>
   );
 };

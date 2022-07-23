@@ -12,11 +12,11 @@ const ItemContainer = () => {
       <Description />
       <Divider />
       <Membership />
-      <ItemTitle title={"월 구독료"} />
+      <ItemTitle title={["월 구독료"]} />
       <ItemFee />
-      <ItemTitle title={"월 구독료"} />
+      <ItemTitle title={["월 구독료"]} />
       <ItemFee />
-      <ItemTitle title={"월 구독료"} />
+      <ItemTitle title={["월 구독료"]} />
       <ItemFee />
     </>
   );
