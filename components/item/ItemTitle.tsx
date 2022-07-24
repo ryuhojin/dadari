@@ -23,8 +23,8 @@ const StyledItemTitle = styled.div`
 const ItemTitle = ({ title }: { title: String[] }) => {
   return (
     <StyledItemTitle>
-      {title.map((v) => (
-        <span>{v}</span>
+      {title.map((v, index) => (
+        <span key={index}>{v}</span>
       ))}
     </StyledItemTitle>
   );

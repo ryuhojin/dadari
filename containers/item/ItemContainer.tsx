@@ -2,6 +2,7 @@ import {
   Description,
   Divider,
   ItemFee,
+  ItemFooter,
   ItemTitle,
   Membership,
 } from "components/item";
@@ -13,11 +14,16 @@ const ItemContainer = () => {
       <Divider />
       <Membership />
       <ItemTitle title={["월 구독료"]} />
-      <ItemFee />
-      <ItemTitle title={["월 구독료"]} />
-      <ItemFee />
-      <ItemTitle title={["월 구독료"]} />
-      <ItemFee />
+      <ItemFee height={268} />
+      <ItemTitle title={["결제단위", "이용범위"]} />
+      <ItemFee height={202} />
+      <ItemTitle title={["무료기간", "제휴혜택"]} />
+      <ItemFee height={202} />
+      <ItemTitle title={["부가기능"]} />
+      <ItemFee height={107} />
+      <ItemTitle title={["컨텐츠수"]} />
+      <ItemFee height={221} />
+      <ItemFooter />
     </>
   );
 };
